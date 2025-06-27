@@ -15,22 +15,22 @@ MavenJavaProject/
 
 #Features
 
->Loads a CSV dataset with user-item interactions
->Computes Pearson Correlation similarity between users
->Finds nearest user neighbors (using NearestNUserNeighborhood)
->Recommends items based on neighbors' preferences
->Fully Maven-based with Mahout 0.9 dependency
+1.Loads a CSV dataset with user-item interactions
+2.Computes Pearson Correlation similarity between users
+3.Finds nearest user neighbors (using NearestNUserNeighborhood)
+4.Recommends items based on neighbors' preferences
+5.Fully Maven-based with Mahout 0.9 dependency
 
 #Technologies
 
->Java 8+
->Apache Mahout 0.9
->Maven
->VS Code (IDE)
+1.Java 8+
+2.Apache Mahout 0.9
+3.Maven
+4.VS Code (IDE)
 
 #Dataset Format
 
->CSV format:
+#CSV format:
 userID,itemID,preference
 1,101,4.0
 1,102,3.0
@@ -42,8 +42,8 @@ Ensure data.csv is placed in src/main/resources/.
 
 #How to Run
 
-cd MavenJavaProject
-mvn clean compile exec:java -DskipTests
+(1)cd MavenJavaProject then
+(2)mvn clean compile exec:java -DskipTests
 
 #OUTPUT
 
@@ -55,8 +55,8 @@ Recommendations for user 2:
 Item ID: 105 | Score: 5.00
 
 #Output Explained
->User ID 3 is given recommendations based on the similarity with other users.
->Items with the highest predicted score are suggested using user-based filtering.
+(a)User ID 3 is given recommendations based on the similarity with other users.
+(b)Items with the highest predicted score are suggested using user-based filtering.
 
 
 
