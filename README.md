@@ -47,7 +47,19 @@ mvn clean compile exec:java -DskipTests
 
 #OUTPUT
 
+#Terminal Output
 ![Image](https://github.com/user-attachments/assets/2be4324a-3aae-40f1-88fe-fa7d883d5d48)
+
+#Sample Output
+Recommendations for user 2:
+Item ID: 105 | Score: 5.00
+
+#Output Explained
+>User ID 3 is given recommendations based on the similarity with other users.
+>Items with the highest predicted score are suggested using user-based filtering.
+
+
+
 
 
 
